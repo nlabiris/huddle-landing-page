@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url("./images/bg-desktop.svg"), hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsl(0, 0% ,100%);
+    font-family: Poppins, Courier, monospace;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.logo {
+    background-image: url("./images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 190px;
+    width: 200px;
+    height: 40px;
+    position: fixed;
+    top: 40px;
+    left: 90px;
+}
+
+.image {
+    background-image: url("./images/illustration-mockups.svg");
+    background-repeat: no-repeat;
+    background-size: 630px;
+    width: 750px;
+    height: 460px;
+}
+
+.page {
+    display: flex;
+}
+
+.content {
+    padding-top: 25px;
+    width: 500px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: hsl(0, 0% ,100%);
+    color: hsl(257, 40%, 49%);
+    padding: 15px 70px 15px 70px;
+    border-radius: 50px;
+    text-align: center;
+    width: min-content;
+    box-shadow: 3px 5px 15px hsl(0, 0%, 20%);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(0, 0% ,100%);
+}
+
+.social {
+    position: fixed;
+    bottom: 40px;
+    right: 90px;
+}
+
+.social span {
+    padding: 5px;
+}
+
+.social .fa-facebook-f {
+    border: 1px hsl(0, 0% ,100%) solid;
+    border-radius: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.social .fa-twitter,
+.social .fa-instagram {
+    border: 1px hsl(0, 0% ,100%) solid;
+    border-radius: 100%;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.social .fa-facebook-f:hover,
+.social .fa-twitter:hover,
+.social .fa-instagram:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+
+/* Responsiveness media query for mobile */
+
+@media screen and (max-width: 375px) {
+    body {
+        background: url("./images/bg-mobile.svg"), hsl(257, 40%, 49%);
+    }
+
+    .page
+    {
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .logo {
+        background-size: 130px;
+        top: 20px;
+        left: 35px;
+        
+    }
+
+    .social {
+        position: initial;
+        padding-top: 100px;
+    }
+
+    .image {
+        background-size: 266px;
+        width: 279px;
+        height: 192px;
+    }
+
+    .content {
+        width: min-content;
+    }
+    
+    h1 {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    p {
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+
+    .button {
+        padding: 10px 100px 10px 100px;
+        border-radius: 50px;
+        text-align: center;
+        width: min-content;
+        box-shadow: 3px 5px 15px hsl(0, 0%, 20%);
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* Attribution styles */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    opacity: 1;
+}
+
+.attribution a {
+    color: hsl(300, 69%, 71%);
+}
+
+/*
+https://stackoverflow.com/questions/8195215/css-background-image-on-background-color
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images
+*/
